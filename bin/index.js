@@ -31,7 +31,6 @@ const compiler = webpack(config);
 compiler.watch({
   aggregateTimeout: 300
 }, (err, stats) => {
-  console.log(stats.toJson());
   exec('node bundle.js',
     (error, stdout, stderr) => {
       if (stdout) console.log(stdout);
