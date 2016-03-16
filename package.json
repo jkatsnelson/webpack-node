@@ -2,7 +2,10 @@
   "name": "webpack-node",
   "version": "0.0.1",
   "description": "Easily run and watch a webpack-built node application.",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "bin": {
+    "webpack-node": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +20,7 @@
   "author": "John Katsnelson",
   "license": "MIT",
   "dependencies": {
+    "commander": "2.9.0",
     "webpack": "1.12.14"
   }
 }

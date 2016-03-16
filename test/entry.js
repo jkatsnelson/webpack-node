@@ -1,1 +1,1 @@
-console.log('wut wut wut')
+console.log('wut')
