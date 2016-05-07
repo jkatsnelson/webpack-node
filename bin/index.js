@@ -31,6 +31,7 @@ const compiler = webpack(config);
 compiler.watch({
   aggregateTimeout: 300
 }, (err, stats) => {
+  // TODO: analyze config to decide where bundle.js is
   exec('node bundle.js',
     (error, stdout, stderr) => {
       if (stdout) console.log(stdout);
